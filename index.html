@@ -22,7 +22,14 @@
     </header>
 
     <section>
-      <!--Breadcrumbs och switch för ljust/mörkt tema-->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb"></ol>
+      </nav>
+
+      <div>
+        <input type="checkbox" id="theme-toggle" aria-label="Växla tema">
+        <label for="theme-toggle"></label>
+      </div>
     </section>
 
     <main>
@@ -31,12 +38,22 @@
 
         <div>
           <article>
-            <!--Bild-->
+            <picture>
+              <source srcset="images/hot-noodles.webp" type="image/webp">
+              <source srcset="images/hot-noodles.jpg" type="image/jpg">
+              <img src="images/hot-noodles.jpg" alt="En nudelsoppa med biff">
+            </picture>
+
             <h3>Goda nudelrätter</h3>
           </article>
 
           <article>
-            <!--Bild-->
+            <picture>
+              <source srcset="images/bolognese.webp" type="image/webp">
+              <source srcset="images/bolognese.jpg" type="image/jpg">
+              <img src="images/bolognese.jpg" alt="Pasta bolognese på en tallrik">
+            </picture>
+
             <h3>Goda pastarätter</h3>
           </article>
         </div>
@@ -47,12 +64,22 @@
 
         <div>
           <article>
-            <!--Bild-->
+            <picture>
+              <source srcset="images/vanlig-semla.webp" type="image/webp">
+              <source srcset="images/vanlig-semla.jpg" type="image/jpg">
+              <img src="images/vanlig-semla.jpg" alt="En vanlig semla som det pudras florsocker över">
+            </picture>
+
             <h3>Semlor</h3>
           </article>
 
           <article>
-            <!--Bild-->
+            <picture>
+              <source srcset="images/panacotta.webp" type="image/webp">
+              <source srcset="images/panacotta.jpg" type="image/jpg">
+              <img src="images/panacotta.jpg" alt="En panacotta med jordgubbar på">
+            </picture>
+
             <h3>Snabbt och gott</h3>
           </article>
         </div>
@@ -75,6 +102,6 @@
       <p>&copy;2026 All rights reserved</p>
     </footer>
 
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
