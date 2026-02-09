@@ -1,0 +1,10 @@
+@use "../css/mixins";
+
+$width-body: 60vw;
+
+header {
+    width: $width-body;
+    margin: 0 auto;
+    background-color: blanchedalmond;
+    @include mixins.flex ();
+}
