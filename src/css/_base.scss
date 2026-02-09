@@ -1,0 +1,16 @@
+$rubrik-color: #E91E63;
+$primary-font: Inter, sans-serif;
+$rubrik-font: Rubik Doodle Shadow, Inter, sans-serif;
+
+h1 {
+    color: $rubrik-color;
+    font-family: $rubrik-font;
+}
+
+body {
+    font-family: $primary-font;
+}
+
+.underrubrik {
+    font-family: $rubrik-font;
+}
