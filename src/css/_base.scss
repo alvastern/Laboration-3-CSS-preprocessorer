@@ -5,10 +5,14 @@ $rubrik-font: Rubik Doodle Shadow, Inter, sans-serif;
 h1 {
     color: $rubrik-color;
     font-family: $rubrik-font;
+    font-size: 3rem;
 }
 
 body {
     font-family: $primary-font;
+    margin: 0;
+    padding: 0;
+    background-color: lavender;
 }
 
 .underrubrik {

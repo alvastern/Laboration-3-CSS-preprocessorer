@@ -1,10 +1,33 @@
 @use "../css/mixins";
 
 $width-body: 60vw;
+$pink-color: #E91E63;
+$white-font: white;
 
 header {
     width: $width-body;
     margin: 0 auto;
-    background-color: blanchedalmond;
+    padding: 20px 60px;
     @include mixins.flex ();
+    background-color: white;
+}
+
+#nav-header {
+    @include mixins.flex ();
+    gap: 3vw;
+
+    li {
+        list-style-type: none;
+        margin: 0;
+        width: 3.5vw;
+        background-color: $pink-color;
+        padding: 1.5vh 1vw;
+        border-radius: 1rem;
+        text-align: center;
+
+        a {
+            color: $white-font;
+            text-decoration: none;
+        }
+    }
 }
