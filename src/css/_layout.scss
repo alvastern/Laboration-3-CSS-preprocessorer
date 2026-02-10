@@ -8,7 +8,7 @@ $background-body: white;
 
 header {
     width: $width-body;
-    margin: 0 auto;
+    margin: 5vh auto 3.5vh auto;
     padding: 20px 60px;
     @include mixins.flex ();
     background-color: $background-body;
@@ -41,11 +41,32 @@ header {
 
 main {
     width: $width-body;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     background-color: $background-body;
     padding: 20px 60px;
 }
 
 .flex-recept {
     @include mixins.flex ();
+}
+
+footer {
+    width: $width-body;
+    margin: 5vh auto;
+    background-color: $background-body;
+    padding: 20px 60px;
+}
+
+#nav-footer {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        margin-bottom: 1vh;
+
+        a {
+            color: black;
+        }
+    }
 }

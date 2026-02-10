@@ -19,8 +19,15 @@ body {
 
 .underrubrik {
     font-family: $rubrik-font;
+    font-size: 1.75rem;
 }
 
 .image-startsida {
     width: 25vw;
+    height: 35vh;
+}
+
+.rubrik-ruta-recept {
+    margin: 3vh 2vw;
+    font-size: 1.5rem;
 }

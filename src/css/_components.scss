@@ -1,0 +1,9 @@
+@use "../css/colors";
+@use "../css/layout";
+
+.ruta-recept {
+    background-color: colors.$primary-dark;
+    height: 45vh;
+    margin-bottom: 5vh;
+    color: white;
+}
