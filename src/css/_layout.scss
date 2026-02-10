@@ -39,6 +39,14 @@ header {
     }
 }
 
+.toolbar {
+    width: $width-body;
+    margin: 0 auto 3vh auto;
+    @include mixins.flex ();
+    background-color: $background-body;
+    padding: 20px 60px;
+}
+
 main {
     width: $width-body;
     margin: 0 auto 0 auto;
