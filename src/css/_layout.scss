@@ -45,3 +45,7 @@ main {
     background-color: $background-body;
     padding: 20px 60px;
 }
+
+.flex-recept {
+    @include mixins.flex ();
+}
