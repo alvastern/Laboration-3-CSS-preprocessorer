@@ -35,7 +35,7 @@ body {
 // Skiftar emllan mörkt och ljust läge
 // Ljust läge
 body {
-  background-color: colors.$white;
+  background-color: colors.$primary-light;
   color: colors.$black;
 }
 
@@ -45,19 +45,20 @@ footer {
   background-color: colors.$white;
 }
 
-a {
-  color: colors.$primary;
-}
-
-// Ljust läge
+// Mörkt läge
 body.dark {
   background-color: colors.$gray-900;
   color: colors.$white;
 }
 
+body.dark #nav-footer a {
+  color: colors.$white;
+}
+
 body.dark header,
 body.dark main,
-body.dark footer {
+body.dark footer,
+body.dark .toolbar {
   background-color: colors.$gray-800;
 }
 
