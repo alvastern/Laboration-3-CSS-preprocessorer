@@ -1,15 +1,17 @@
 @use "../css/mixins";
+@use "../css/colors";
 
 $width-body: 60vw;
 $pink-color: #E91E63;
 $white-font: white;
+$background-body: white;
 
 header {
     width: $width-body;
     margin: 0 auto;
     padding: 20px 60px;
     @include mixins.flex ();
-    background-color: white;
+    background-color: $background-body;
 }
 
 #nav-header {
@@ -35,4 +37,11 @@ header {
             text-decoration: underline;
         }
     }
+}
+
+main {
+    width: $width-body;
+    margin: 0 auto;
+    background-color: $background-body;
+    padding: 20px 60px;
 }

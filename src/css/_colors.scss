@@ -1,0 +1,13 @@
+$base-color: #E91E63;
+
+// Färgschema för rosa färger
+@use "sass:color";
+
+$primary: $base-color;
+$primary-light: color.scale($base-color, $lightness: 90%);
+$primary-dark: color.scale($base-color, $lightness: -25%);
+
+$primary-saturated: color.scale($base-color, $saturation: 30%);
+$primary-desaturated: color.scale($base-color, $saturation: -40%);
+
+$primary-complement: color.complement($base-color);

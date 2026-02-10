@@ -1,3 +1,5 @@
+@use "../css/colors";
+
 $rubrik-color: #E91E63;
 $primary-font: Inter, sans-serif;
 $rubrik-font: Rubik Doodle Shadow, Inter, sans-serif;
@@ -12,7 +14,7 @@ body {
     font-family: $primary-font;
     margin: 0;
     padding: 0;
-    background-color: lavender;
+    background-color: colors.$primary-light;
 }
 
 .underrubrik {
