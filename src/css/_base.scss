@@ -31,3 +31,36 @@ body {
     margin: 3vh 2vw;
     font-size: 1.5rem;
 }
+
+// Skiftar emllan mörkt och ljust läge
+// Ljust läge
+body {
+  background-color: colors.$white;
+  color: colors.$black;
+}
+
+header,
+main,
+footer {
+  background-color: colors.$white;
+}
+
+a {
+  color: colors.$primary;
+}
+
+// Ljust läge
+body.dark {
+  background-color: colors.$gray-900;
+  color: colors.$white;
+}
+
+body.dark header,
+body.dark main,
+body.dark footer {
+  background-color: colors.$gray-800;
+}
+
+body.dark a {
+  color: colors.$primary-light;
+}
