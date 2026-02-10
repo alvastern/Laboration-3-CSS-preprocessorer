@@ -24,10 +24,15 @@ header {
         padding: 1.5vh 1vw;
         border-radius: 1rem;
         text-align: center;
+        font-weight: 600;
 
         a {
             color: $white-font;
             text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     }
 }
