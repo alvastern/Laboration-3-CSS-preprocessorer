@@ -2,9 +2,9 @@
 @use "../css/layout";
 
 .ruta-recept {
-  height: 45vh;
   margin-bottom: 5vh;
   color: white;
+  width: 27.5vw;
   background-color: colors.$primary-dark;
 }
 
@@ -44,5 +44,11 @@
 
   input:checked + label .switch {
     transform: translateX(24px);
+  }
+}
+
+@media (max-width: 600px) {
+  .ruta-recept {
+    width: 70vw;
   }
 }

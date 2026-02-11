@@ -22,8 +22,8 @@ h1 {
 }
 
 .image-startsida {
-    width: 25vw;
-    height: 35vh;
+    width: 27.5vw;
+    height: auto;
 }
 
 .rubrik-ruta-recept {
@@ -117,4 +117,10 @@ body.light a {
 
 body.light #nav-footer a {
   color: colors.$light-footer-link;
+}
+
+@media (max-width: 600px) {
+  .image-startsida {
+    width: 70vw;
+  }
 }

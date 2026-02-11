@@ -1,7 +1,7 @@
 @use "../css/mixins";
 @use "../css/colors";
 
-$width-body: 60vw;
+$width-body: 70vw;
 $pink-color: #E91E63;
 $white-font: white;
 $background-body: white;
@@ -9,7 +9,7 @@ $background-body: white;
 %body-box {
     width: $width-body;
     margin: 0 auto;
-    padding: 20px 60px;
+    padding: 3vh 4vw;
 }
 
 header {
@@ -19,6 +19,11 @@ header {
     background-color: $background-body;
 }
 
+.menu-nav {
+    display: none;
+    border: none;
+}
+
 #nav-header {
     @include mixins.flex ();
     gap: 3vw;
@@ -26,7 +31,6 @@ header {
     li {
         list-style-type: none;
         margin: 0;
-        width: 3.5vw;
         background-color: $pink-color;
         padding: 1.5vh 1vw;
         border-radius: 1rem;
@@ -77,5 +81,60 @@ footer {
         a {
             color: black;
         }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4vw;
+    }
+
+    #nav-header {
+        display: none;
+    }
+
+    .menu-nav {
+        display: flex;
+        width: auto;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    .menu-nav a {
+        display: block;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4vw;
+    }
+
+    #nav-header {
+        display: none;
+    }
+
+    .menu-nav {
+        display: flex;
+        width: auto;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    .menu-nav a {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .flex-recept {
+        @include mixins.flex(space-between, center, column);
+        gap: 2rem;
     }
 }
