@@ -84,6 +84,11 @@ footer {
     }
 }
 
+.text-paragraf {
+    width: 50ch;
+    margin-bottom: 5vh;
+}
+
 @media (min-width: 600px) and (max-width: 1024px) {
     header {
         display: flex;
@@ -127,6 +132,10 @@ footer {
 
     #nav-header.show {
         display: flex;
+    }
+
+    .text-paragraf {
+        width: 40ch;
     }
 }
 
@@ -178,5 +187,9 @@ footer {
 
     #nav-header.show {
         display: flex;
+    }
+
+    .text-paragraf {
+        width: 70vw;
     }
 }
