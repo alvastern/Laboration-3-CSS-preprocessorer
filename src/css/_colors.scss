@@ -4,23 +4,19 @@
 $base-color: #E91E63;
 $primary: $base-color;
 $primary-light: color.scale($base-color, $lightness: 90%);
-$primary-dark: color.scale($base-color, $lightness: -40%);
+$primary-dark: color.scale($base-color, $lightness: -30%);
 $primary-complement: color.complement($base-color);
 
-// =============================
-// LIGHT THEME
-// =============================
-$light-bg: $primary-light;      // Bakgrund
-$light-surface: #ffffff;        // Sektioner: header, main, footer, toolbar
-$light-text: #111111;           // Brödtext
-$light-link: $primary;          // Länkar
-$light-footer-link: #111111;    // Footer-länkar
+// Ljust läge
+$light-bg: $primary-light;
+$light-surface: #ffffff;
+$light-text: #111111;
+$light-link: $primary;
+$light-footer-link: #111111;
 
-// =============================
-// DARK THEME
-// =============================
-$dark-bg: #121212;              // Bakgrund
-$dark-surface: #1e1e1e;         // Sektioner
-$dark-text: #ffffff;            // Brödtext
-$dark-link: $primary-light;     // Länkar
-$dark-footer-link: #ffffff;     // Footer-länkar
+// Mörkt läge
+$dark-bg: #121212;
+$dark-surface: #1e1e1e;
+$dark-text: #ffffff;
+$dark-link: $primary-light;
+$dark-footer-link: #ffffff;

@@ -6,10 +6,15 @@ $pink-color: #E91E63;
 $white-font: white;
 $background-body: white;
 
-header {
+%body-box {
     width: $width-body;
-    margin: 5vh auto 3.5vh auto;
+    margin: 0 auto;
     padding: 20px 60px;
+}
+
+header {
+    @extend %body-box;
+    margin: 5vh auto 3.5vh auto;
     @include mixins.flex ();
     background-color: $background-body;
 }
@@ -40,18 +45,15 @@ header {
 }
 
 .toolbar {
-    width: $width-body;
+    @extend %body-box; 
     margin: 0 auto 3vh auto;
     @include mixins.flex ();
     background-color: $background-body;
-    padding: 20px 60px;
 }
 
 main {
-    width: $width-body;
-    margin: 0 auto 0 auto;
+    @extend %body-box;
     background-color: $background-body;
-    padding: 20px 60px;
 }
 
 .flex-recept {
@@ -59,10 +61,9 @@ main {
 }
 
 footer {
-    width: $width-body;
+    @extend %body-box; 
     margin: 5vh auto;
     background-color: $background-body;
-    padding: 20px 60px;
 }
 
 #nav-footer {
