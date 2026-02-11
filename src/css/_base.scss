@@ -8,6 +8,12 @@ h1 {
     color: $rubrik-color;
     font-family: $rubrik-font;
     font-size: 3rem;
+
+    @if $rubrik-color == #E91E63 {
+      color: $rubrik-color;
+    } @else {
+        color: black;
+    }
 }
 
 .underrubrik {
