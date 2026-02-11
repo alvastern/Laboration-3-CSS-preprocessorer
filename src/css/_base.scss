@@ -10,13 +10,6 @@ h1 {
     font-size: 3rem;
 }
 
-body {
-    font-family: $primary-font;
-    margin: 0;
-    padding: 0;
-    background-color: colors.$primary-light;
-}
-
 .underrubrik {
     font-family: $rubrik-font;
     font-size: 1.75rem;
@@ -32,36 +25,90 @@ body {
     font-size: 1.5rem;
 }
 
-// Skiftar emllan mörkt och ljust läge
 // Ljust läge
 body {
-  background-color: colors.$primary-light;
-  color: colors.$black;
+    background-color: colors.$light-bg;
+    color: colors.$light-text;
+    margin: 0;
+    padding: 0;
+    font-family: $primary-font;
 }
 
 header,
 main,
-footer {
-  background-color: colors.$white;
+footer,
+.toolbar {
+    background-color: colors.$light-surface;
+}
+
+a {
+    color: colors.$light-link;
+}
+
+#nav-footer a {
+    color: colors.$light-footer-link;
 }
 
 // Mörkt läge
-body.dark {
-  background-color: colors.$gray-900;
-  color: colors.$white;
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: colors.$dark-bg;
+    color: colors.$dark-text;
+  }
+
+  header,
+  main,
+  footer,
+  .toolbar {
+    background-color: colors.$dark-surface;
+  }
+
+  a {
+    color: colors.$dark-link;
+  }
+
+  #nav-footer a {
+    color: colors.$dark-footer-link;
+  }
 }
 
-body.dark #nav-footer a {
-  color: colors.$white;
+body.dark {
+  background-color: colors.$dark-bg;
+  color: colors.$dark-text;
 }
 
 body.dark header,
 body.dark main,
 body.dark footer,
 body.dark .toolbar {
-  background-color: colors.$gray-800;
+  background-color: colors.$dark-surface;
 }
 
 body.dark a {
-  color: colors.$primary-light;
+  color: colors.$dark-link;
+}
+
+body.dark #nav-footer a {
+  color: colors.$dark-footer-link;
+}
+
+// Switch
+body.light {
+  background-color: colors.$light-bg;
+  color: colors.$light-text;
+}
+
+body.light header,
+body.light main,
+body.light footer,
+body.light .toolbar {
+  background-color: colors.$light-surface;
+}
+
+body.light a {
+  color: colors.$light-link;
+}
+
+body.light #nav-footer a {
+  color: colors.$light-footer-link;
 }
