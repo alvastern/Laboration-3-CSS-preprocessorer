@@ -2,7 +2,7 @@
 
 import "../css/main.scss";
 
-// Ändra till mörkt eller ljust läge
+// Justering mellan mörkt och ljust läge
 let savedTheme = localStorage.getItem("theme");
 let themeSwitch = document.getElementById("theme-toggle");
 
@@ -28,4 +28,12 @@ themeSwitch.addEventListener('change', () => {
         document.body.classList.remove("dark");
         localStorage.setItem("theme", "light")
     }
+});
+
+// Meny för mindre enheter
+let menuButton = document.getElementById('menu-nav');
+let navBar = document.getElementById('nav-header');
+
+menuButton.addEventListener('click', () => {
+    navBar.classList.toggle("show");
 });
